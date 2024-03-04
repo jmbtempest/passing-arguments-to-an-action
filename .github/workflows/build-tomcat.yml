@@ -17,10 +17,10 @@ jobs:
           java -version
 
     - name: Check out Apache Tomcat
-      uses: actions/checkout@v4
+      uses: actions/checkout@v4 # Changed from v2 to v4
       with:
         repository: apache/tomcat # Repository name with owner
-        ref: master               # The branch, tag or SHA to checkout
+        ref: main               # The branch, tag or SHA to checkout #Change master to main
         path: ./tomcat            # Relative path under $GITHUB_WORKSPACE
 
     - name: Setup Java 9
