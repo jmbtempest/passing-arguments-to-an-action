@@ -28,7 +28,7 @@ jobs:
       with:
         #java-version: '9.0.4'     # The JDK version to make available on the path
         java-version: '21'     # added jmb
-        distribution: 'oracle' # added jmb
+        distribution: 'temurin' # added jmb set to oracle testing temurin
         #java-package: jdk         # (jre, jdk, or jdk+fx) - defaults to jdk #removed
         #architecture: x64         # (x64 or x86) - defaults to x64 #removed
 
