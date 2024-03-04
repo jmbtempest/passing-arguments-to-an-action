@@ -24,11 +24,13 @@ jobs:
         path: ./tomcat            # Relative path under $GITHUB_WORKSPACE
 
     - name: Setup Java 9
-      uses: actions/setup-java@v1
+      uses: actions/setup-java@v4 # change version from v1 to v4
       with:
-        java-version: '9.0.4'     # The JDK version to make available on the path
-        java-package: jdk         # (jre, jdk, or jdk+fx) - defaults to jdk
-        architecture: x64         # (x64 or x86) - defaults to x64
+        #java-version: '9.0.4'     # The JDK version to make available on the path
+        java-version: '21'     # added jmb
+        distribution: 'oracle' # added jmb
+        #java-package: jdk         # (jre, jdk, or jdk+fx) - defaults to jdk #removed
+        #architecture: x64         # (x64 or x86) - defaults to x64 #removed
 
     - name: List project files and java version
       run: |
